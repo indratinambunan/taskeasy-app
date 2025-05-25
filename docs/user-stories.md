@@ -27,6 +27,9 @@
      - Tasks are sorted by priority (high → medium → low)
      - Each task shows title, description, priority, and status
 
+### Epic 2: Task Management Operations
+**Priority: MEDIUM**
+
 3. **US-003**: Update Task
    - **As a** user
    - **I want to** edit existing tasks
@@ -47,8 +50,8 @@
      - Task is removed from the list
      - Action cannot be undone (for now)
 
-### Epic 2: Data Persistence
-**Priority: MEDIUM**
+### Epic 3: Data Persistence & Enhancement
+**Priority: LOW**
 
 5. **US-005**: Persist Tasks
    - **As a** user
@@ -60,21 +63,30 @@
      - Tasks persist after page refresh
      - No data loss occurs
 
+6. **US-006**: Task Search & Filter
+   - **As a** user
+   - **I want to** search and filter tasks by status or priority
+   - **So that** I can quickly find specific tasks
+   - **Story Points**: 2
+   - **Acceptance Criteria**:
+     - User can search tasks by title
+     - User can filter by status (to-do, in-progress, done)
+     - User can filter by priority (high, medium, low)
+     - Filters can be combined
+
 ## Sprint Planning
 
-### Sprint 1 (Days 2-3): Core CRUD Operations
+### Sprint 1 (Days 2-3): Core CRUD Operations - HIGH Priority
 - US-001: Create Task
 - US-002: View Task List
 
-### Sprint 2 (Days 4-5): Advanced Features
+### Sprint 2 (Days 4-5): Advanced Features - MEDIUM Priority
 - US-003: Update Task
 - US-004: Delete Task
-- US-005: Persist Tasks
 
-### Sprint 3 (Day 6): Polish & Deploy
-- UI improvements
-- Testing
-- Deployment
+### Sprint 3 (Day 6): Enhancement & Deploy - LOW Priority
+- US-005: Persist Tasks
+- US-006: Task Search & Filter (if time permits)
 
 ## Definition of Done
 - [ ] Feature works as described in acceptance criteria
@@ -84,14 +96,8 @@
 - [ ] Customer has reviewed and approved
 - [ ] No breaking changes to existing features
 
-## Team Roles
-- **Developer 1**: [Rifky Ghifari Siregar] - Driver/Navigator
-- **Developer 2**: [Indra Jeremia Tinambunan] - Driver/Navigator  
-- **Customer/Product Owner**: [Carlos Leonardo J Dongoran] - Feedback & Prioritas
-- **Coach**: [Rotasi] - Memastikan XP practices
-
-## Daily Standup Template
-### What did we accomplish yesterday?
-### What will we work on today?
-### Are there any blockers?
-### XP practices check: Pair programming? TDD? Refactoring?
+## Priority Summary
+- **HIGH (11 points)**: US-001 (3) + US-002 (2) = 5 points
+- **MEDIUM (4 points)**: US-003 (3) + US-004 (1) = 4 points  
+- **LOW (4 points)**: US-005 (2) + US-006 (2) = 4 points
+- **Total**: 13 story points across 6 user stories
